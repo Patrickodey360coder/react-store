@@ -21,4 +21,8 @@ class ProductController extends Controller
     public function show ($id){
         return response()->json('show specific product');
     }
+
+    public function update ($id){
+        return response()->json('update specific product')
+    }
 }
