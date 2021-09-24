@@ -11,6 +11,10 @@ class ProductController extends Controller
     }
 
     public function products (){
-        return response()->json('Products')
+        return response()->json('Products');
+    }
+
+    public function store (){
+        return response()->json('store');
     }
 }
