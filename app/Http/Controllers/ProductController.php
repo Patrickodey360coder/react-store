@@ -10,19 +10,23 @@ class ProductController extends Controller
         return response()->json(["message" => "hello world", "author" => ['Patrick', 'Joseph', 'Anthony']], 201);
     }
 
-    public function products (){
+    public function products(){
         return response()->json('Products');
     }
 
-    public function store (){
+    public function store(){
         return response()->json('store');
     }
 
-    public function show ($id){
+    public function show($id){
         return response()->json('show specific product');
     }
 
-    public function update ($id){
-        return response()->json('update specific product')
+    public function update($id){
+        return response()->json('update specific product');
+    }
+
+    public function delete($id){
+        return response()->json('delete product');
     }
 }
